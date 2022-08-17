@@ -11,9 +11,9 @@ class searchPage{
     {
         this.elements.logo().should('have.attr','src').and('contain','MMS_Logo_Tavel_Club_large');
     }
-    typeHotelInSearchBox(hotelName)
+    typeInSearchBox(name)
     {
-        this.elements.searchBox().scrollIntoView().should('be.visible').type(hotelName);
+        this.elements.searchBox().scrollIntoView().should('be.visible').type(name);
     }
     selectDate(startDate,endDate)
     {

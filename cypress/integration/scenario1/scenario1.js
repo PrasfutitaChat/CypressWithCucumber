@@ -27,7 +27,7 @@ Given("User opens the hotel booking url",()=>{
 })
 
 When("User clicks the search panel, provides HotelName {string},CheckIn_date {string} and CheckOut_date {string}", (hotelName,checkInDate,checkoutDate)=>{
-    searchPage.typeHotelInSearchBox(hotelName); 
+    searchPage.typeInSearchBox(hotelName); 
     searchPage.selectDate(checkInDate,checkoutDate); 
     cy.wrap(hotelName).as("hotelName");
     cy.wrap(checkInDate).as("checkInDate");

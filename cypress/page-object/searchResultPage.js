@@ -5,7 +5,8 @@ class searchResultPage{
         firstHotelName: () => cy.get('.mod-hotelRooms-rates').eq(0).find('h2'),
         hotelImage: ()=> cy.get('.js-magnific-gallery').find('img'),
         perNightCostofFirstSearchResult: ()=> cy.get('.mod-hotelRooms-rates').eq(0).find('.nightPrice > span'),
-        totalCostofFirstSearchResult: ()=> cy.get('.mod-hotelRooms-rates').eq(0).contains('Total stay (inc tax').parent().find('span').eq(1).find('span')
+        totalCostofFirstSearchResult: ()=> cy.get('.mod-hotelRooms-rates').eq(0).contains('Total stay (inc tax').parent().find('span').eq(1).find('span'),
+        allHotelList: ()=>cy.get('#search-list')
         
 
     }
