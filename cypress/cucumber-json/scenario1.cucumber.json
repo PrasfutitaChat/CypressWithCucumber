@@ -1,0 +1,103 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Hotel booking process journey",
+    "line": 1,
+    "id": "hotel-booking-process-journey",
+    "tags": [],
+    "uri": "scenario1.feature",
+    "elements": [
+      {
+        "id": "hotel-booking-process-journey;unsuccessful-hotel-booking-with-invalid-card-number",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Unsuccessful hotel booking with invalid card number",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "User opens the hotel booking url",
+            "result": {
+              "status": "passed",
+              "duration": 14114000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User clicks the search panel, provides HotelName \"berns\",CheckIn_date \"29\" and CheckOut_date \"30\"",
+            "result": {
+              "status": "passed",
+              "duration": 4997000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User clicks on search button",
+            "result": {
+              "status": "passed",
+              "duration": 7643000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User selects the first hotel, verifies whether the selected basket detail showing the hotel name, room name with price and then confirms booking",
+            "result": {
+              "status": "passed",
+              "duration": 9403000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User navigates to payment page, enter necessary personal details like FirstName \"Pras\", LastName \"Chak\", PhoneNum \"9876569870\", Email \"abc@gmail.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 18156000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User provides address deatils lile AddressLine1 \"Towe1, 17-G\", AddressLine2 \"South city complex\", City \"Kolkata\", PostCode \"700068\", Country \"India\"",
+            "result": {
+              "status": "passed",
+              "duration": 6198000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User enters payment details with NameOnCard \"Prasfutita\", CardType \"VISA\", invalid CardNumber \"1234123412341234\", ExpiryDate \"11/26\", CVV \"123\" and clicks PayNow button",
+            "result": {
+              "status": "passed",
+              "duration": 8080000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User verifies proper invalid card number error message in payment portal",
+            "result": {
+              "status": "failed",
+              "duration": 10744000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<div>' to contain text 'Your card number is incorrect h.', but the text was 'Your card number is incorrect.'\n    + expected - actual\n\n    -'Your card number is incorrect.'\n    +'Your card number is incorrect h.'\n\n    at checkoutPage.verifyErrorInvalidCardNumber (https://www.mrandmrssmith.com/__cypress/tests?p=cypress\\integration\\scenario1.feature:330:88)\n    at Context.eval (https://www.mrandmrssmith.com/__cypress/tests?p=cypress\\integration\\scenario1.feature:124:28)\n    at Context.resolveAndRunStepDefinition (https://www.mrandmrssmith.com/__cypress/tests?p=cypress\\integration\\scenario1.feature:10904:29)\n    at Context.eval (https://www.mrandmrssmith.com/__cypress/tests?p=cypress\\integration\\scenario1.feature:10225:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

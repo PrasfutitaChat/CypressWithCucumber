@@ -2,5 +2,9 @@
     "env": {
     "baseURL":"https://www.mrandmrssmith.com/"
     },
-    "testFiles": "**/*.feature"
+    "testFiles": "**/*.feature",
+    "chromeWebSecurity": false,
+    "video": false,
+    "screenshotOnRunFailure": false
+    
 }
