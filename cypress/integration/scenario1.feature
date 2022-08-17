@@ -1,9 +1,9 @@
 Feature: Hotel booking process journey
 
+#Instead of just writting the hotel booking scenario happy path in cucumber gherkin, I made the excutable code for 
+#hotel booking process negative path with invalid card number. Though in seprate file I have written all the scenarios for happy path
 
-
-
-#1st Hotel booking process negative path with invalid card number
+#Hotel booking process negative path with invalid card number
   Scenario: Unsuccessful hotel booking with invalid card number
     Given User opens the hotel booking url
     When User clicks the search panel, provides HotelName "berns",CheckIn_date "29" and CheckOut_date "30"

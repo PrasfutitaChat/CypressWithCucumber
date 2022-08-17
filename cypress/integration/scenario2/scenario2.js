@@ -38,7 +38,7 @@ When("user enters city as {string} in the search bar",(city)=>{
 
 })
 And("user click on the tag as suggested destinations" ,()=>{
-    cy.get('.enterTrigger').click();
+    searchPage.elements.cityTag().scrollIntoView().should('be.visible').click();
 
 })
 

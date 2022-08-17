@@ -4,7 +4,8 @@ class searchPage{
         logo: ()=> cy.get('.logoLarge',{timeout:7000}),
         searchBox: ()=> cy.get('#react-s_query'),
         datePicker: ()=> cy.get('#checkin-checkout-follow'),
-        searchButton: ()=> cy.get('#s_search')
+        searchButton: ()=> cy.get('#s_search'),
+        cityTag:()=> cy.get('.enterTrigger')
 
     }
     successfulPageLoad()

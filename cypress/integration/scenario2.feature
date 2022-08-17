@@ -1,8 +1,5 @@
 Feature: Scenario till Get A Room page
-
-
-
-
+#The second scenario 
 
 Scenario: Scenario till Get A Room page
 Given user navigates to baseurl
