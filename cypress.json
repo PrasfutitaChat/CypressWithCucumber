@@ -1,0 +1,6 @@
+{
+    "env": {
+    "baseURL":"https://www.mrandmrssmith.com/"
+    },
+    "testFiles": "**/*.feature"
+}
